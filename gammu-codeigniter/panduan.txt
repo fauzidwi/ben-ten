@@ -1,0 +1,23 @@
+1. install gammu service tutorialnya ada di sini :
+    https://tnetter.wordpress.com/2013/12/28/dokumentasi-install-gammu-1-33xampp-1-8-2-windows-788-1/
+   note : dibagian import database, import database sms.sql yang ak upload di web
+
+   donwload gammu terbaru, versi : http://wammu.eu/download/gammu/1.33.0/ 
+   note : kalo download yang .zip kalo yang 32 bit download yang paling bawah.
+
+   download ODBC : https://dev.mysql.com/downloads/connector/odbc/
+   cara connect ODBC ke xampp : http://ahmad-munif.blogspot.com/2013/04/cara-membuat-koneksi-dengan-mysql.html
+   note : data sourcenya diisi  localmysql databasenya pilih sms.
+
+2. jalanin service gammu setelah instalasi service sukses pake command 'gammu-smsd -c smsdrc'
+3. extract file koperasi.rar di direktori htdocs xampp atau di www kalo pake wamp.
+5. masuk ke direktori xampp/htdocs/koperasi/application/config atau wamp/www/yoecos/application/config buka file config.php sama database.php
+6. di file config.php edit $config['base_url']	= 'http://localhost:82/koperasi/'; sesuain alamat localhost di komputer kamu. aku pake 82 karena port localhostku di 82 kalo 80 pake localhost aja http://localhost/koperasi.
+7. di file database.php edit bagian
+  $db['default']['hostname'] = 'localhost'; (ganti kalo hostname beda)
+  
+$db['default']['username'] = 'root'; (username database mysql)
+  
+$db['default']['password'] = ''; (kalo pake password buat akses databasenya)
+8. akses di browser dari link http://localhost/koperasi/
+9. (username : admin ; password : admin) 

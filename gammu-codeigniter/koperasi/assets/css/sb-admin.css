@@ -1,0 +1,288 @@
+/*!
+ * Start Bootstrap - SB Admin Bootstrap Admin Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+body,html {
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+body {
+    margin-top: 100px;
+    background-color: white;
+}
+
+@media(min-width:768px) {
+    body {
+        margin-top: 50px;
+    }
+}
+
+#wrapper {
+    font-family: 'Lato', sans-serif;
+    padding-left: 0;
+}
+
+#page-wrapper {
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    padding: 0;
+    background: #fff;
+}
+
+#page-wrapper form {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+}
+
+.special {
+    position: relative;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;   
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 225px;
+    }
+
+    #page-wrapper {
+        padding: 10px;
+    }
+}
+
+.header-content {
+    position: relative;
+    width: 100%;
+    padding: 100px 15px;
+    text-align: center;
+    color: white;
+}
+
+.header-content .header-content-inner h1 {
+    font-family: 'Lato', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.header-content .header-content-inner hr {
+    margin: 30px auto;
+}
+
+.header-content .header-content-inner p {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 50px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+@media(min-width:768px) {
+   .header-content {
+        position: absolute;
+        top: 50%;
+        padding: 0;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .header-content .header-content-inner {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 100%;
+    }
+
+    .header-content .header-content-inner h1 {
+        font-size: 50px;
+
+    }
+
+    .header-content .header-content-inner p {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 80%;
+        font-size: 14px;
+    }
+}
+
+/* Top Navigation */
+
+.top-nav {
+    font-family: 'Lato', sans-serif;
+    padding: 0 15px;
+}
+
+.top-nav>li {
+    display: inline-block;
+    float: left;
+}
+
+.top-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 20px;
+    color: #999;
+}
+
+.top-nav>li>a:hover,
+.top-nav>li>a:focus,
+.top-nav>.open>a,
+.top-nav>.open>a:hover,
+.top-nav>.open>a:focus {
+    color: #fff;
+    background-color: #000;
+}
+
+.top-nav>.open>.dropdown-menu {
+    float: left;
+    position: absolute;
+    margin-top: 0;
+    border: 1px solid rgba(0,0,0,.15);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.top-nav>.open>.dropdown-menu>li>a {
+    white-space: normal;
+}
+
+ul.message-dropdown {
+    padding: 0;
+    max-height: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+li.message-preview {
+    width: 275px;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+}
+
+li.message-preview>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+li.message-footer {
+    margin: 5px 0;
+}
+
+/* Side Navigation */
+
+@media(min-width:768px) {
+    .side-nav {
+        font-family: 'Lato', sans-serif;
+        position: fixed;
+        top: 51px;
+        left: 225px;
+        width: 225px;
+        margin-left: -225px;
+        border: none;
+        border-radius: 0;
+        overflow-y: auto;
+        background-color: #222;
+        bottom: 0;
+        overflow-x: hidden;
+        padding-bottom: 40px;
+    }
+
+    .side-nav>li>a {
+        width: 225px;
+    }
+
+    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+        background-color: #000 !important;
+    }
+}
+
+.side-nav>li>ul {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+}
+
+.side-nav>li>ul>li>a {
+    display: block;
+    padding: 10px 15px 10px 38px;
+    text-decoration: none;
+    color: #999;
+}
+
+.side-nav>li>ul>li>a:hover {
+    color: #fff;
+}
+
+.input-group-addon.primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 118, 177);
+    border-color: rgb(40, 94, 142);
+}
+.input-group-addon.success {
+    color: rgb(255, 255, 255);
+    background-color: rgb(92, 184, 92);
+    border-color: rgb(76, 174, 76);
+}
+.input-group-addon.info {
+    color: rgb(255, 255, 255);
+    background-color: rgb(57, 179, 215);
+    border-color: rgb(38, 154, 188);
+}
+.input-group-addon.warning {
+    color: rgb(255, 255, 255);
+    background-color: rgb(240, 173, 78);
+    border-color: rgb(238, 162, 54);
+}
+.input-group-addon.danger {
+    color: rgb(255, 255, 255);
+    background-color: rgb(217, 83, 79);
+    border-color: rgb(212, 63, 58);
+}
+
+.icon_counter_red {
+    background-color      : #f00;
+}
+ 
+.icon_counter_blue {
+    background-color      : #39f;
+}
+ 
+.icon_counter_green {
+    background-color      : #3c3;
+}
+ 
+.icon_counter {
+    color                 : #fff;
+    font-family           : "Arial";
+    font-size             : 14px;
+    font-weight           : 600;
+    
+    position              : absolute;
+ 
+    padding               : 0px 2px;
+    margin-top            : 6px;
+    margin-left           : -3px;
+ 
+    -webkit-border-radius : 3px;
+    -moz-border-radius    : 3px;
+    border-radius         : 3px;
+ 
+    -webkit-box-shadow    : inset 0px 0px 2px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow       : inset 0px 0px 2px 0px rgba(50, 50, 50, 0.75);
+    box-shadow            : inset 0px 0px 2px 0px rgba(50, 50, 50, 0.75);
+}
